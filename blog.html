@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - DARC OMNIVERSE</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="attached_assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Stay updated with the latest insights from DARC OMNIVERSE on technology, design, and education.">
+    <meta name="keywords" content="blog, technology, design, education, innovation, tutorials, insights">
+    <meta property="og:title" content="Blog - DARC OMNIVERSE">
+    <meta property="og:description" content="Discover insights, tutorials, and innovations from the DARC OMNIVERSE team.">
+    <meta property="og:image" content="logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="DARC OMNIVERSE Logo" class="nav-logo-image">
+                <h2>DARC OMNIVERSE</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#darc-tech" class="nav-link">Darc Tech</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#darc-design" class="nav-link">Darc Design</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#helix-academy" class="nav-link">Helix Academy</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="blog-hero-content">
+                <h1 class="blog-hero-title">DARCVERSE Blog</h1>
+                <p class="blog-hero-subtitle">Insights, tutorials, and innovations from our team</p>
+                <div class="blog-search">
+                    <div class="search-container">
+                        <input type="text" id="blog-search" placeholder="Search articles..." />
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Filters -->
+    <section class="blog-filters">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-category="all">All Posts</button>
+                <button class="filter-tab" data-category="technology">Technology</button>
+                <button class="filter-tab" data-category="design">Design</button>
+                <button class="filter-tab" data-category="education">Education</button>
+                <button class="filter-tab" data-category="innovation">Innovation</button>
+                <button class="filter-tab" data-category="tutorials">Tutorials</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <div class="featured-placeholder">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="featured-badge">Featured</div>
+                </div>
+                <div class="featured-info">
+                    <div class="article-meta">
+                        <span class="category">Technology</span>
+                        <span class="date">December 15, 2024</span>
+                    </div>
+                    <h2 class="featured-title">The Future of Home Automation: How DARC TECH is Revolutionizing Smart Living</h2>
+                    <p class="featured-excerpt">Discover how our innovative automation solutions are transforming homes into intelligent living spaces. From fire detection systems to smart doors, explore the technologies that are shaping the future of residential living.</p>
+                    <div class="featured-author">
+                        <div class="author-info">
+                            <h4>DARC Team</h4>
+                            <p>Technology Innovation</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary read-more-btn" data-article="featured">
+                        <i class="fas fa-arrow-right"></i>
+                        Read Full Article
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-grid-section">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="blog-grid" id="blog-grid">
+                <!-- Blog posts will be dynamically loaded here -->
+            </div>
+            <div class="load-more-container">
+                <button class="btn btn-secondary" id="load-more">
+                    <i class="fas fa-plus"></i>
+                    Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-info">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter and never miss the latest insights from DARC OMNIVERSE</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="newsletter-input">
+                        <input type="email" name="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Modal -->
+    <div class="article-modal" id="article-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modal-body">
+                <!-- Article content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="attached_assets/logo.png" alt="DARC OMNIVERSE Logo">
+                        <h3>DARC OMNIVERSE</h3>
+                    </div>
+                    <p>Innovation, Creativity, Learning - all in one place.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="index.html#darc-tech">DARC TECH</a></li>
+                        <li><a href="index.html#darc-design">DARC DESIGN</a></li>
+                        <li><a href="index.html#helix-academy">HELIX ACADEMY</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="index.html#darc-tech">Fire Detection</a></li>
+                        <li><a href="index.html#darc-tech">Solar Power</a></li>
+                        <li><a href="index.html#darc-tech">Smart Doors</a></li>
+                        <li><a href="index.html#darc-tech">DARC DESC</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> darcomniverse@gmail.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +234 808 261 0560</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DARC OMNIVERSE. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>
